@@ -1,23 +1,28 @@
 from django.db import models
 
-# Create your models here.
+# Os banocs vão ter a mesma estrutura, mas com ´names´ diferentes.
+# Na teoria, isso deve servir pra poder salvar localmente e exportar de forma remota.
 
-# app/models.py:
-class MigrationKFSM3 (models.Model):
-  # .....
-    
-  # app/dbrouters.py: # [new file]
-from .models import MigrationKFSM3
-  
-class DBRouter:
-  def db_for_read (self, model, **hints):
-    if (model == kfs):
-      # your model name as in settings.py/DATABASES
-      return 'kfs'
-    return None
-       
-  def db_for_write (self, model, **hints):
-    if (model == m3):
-      # your model name as in settings.py/DATABASES
-      return 'm3'
-    return None
+class companiesKFS (models.Model):
+# aqui vão os campos do banco da kfs
+
+class numbersKFS (models.Model):
+#  aqui vão os campos do banco da kfs
+
+class callsKFS (models.Model):
+#  aqui vão os campos do banco da kfs
+
+class modules_has_companiesKFS (models.Model):
+#  aqui vão os campos do banco da kfs
+
+class quick_answersKFS (models.Model):
+#  aqui vão os campos do banco da kfs
+
+class scriptsKFS (models.Model):
+#  aqui vão os campos do banco da kfs
+
+class usersKFS (models.Model):
+#  aqui vão os campos do banco da kfs
+
+class tagsKFS (models.Model):
+#  aqui vão os campos do banco da kfs
