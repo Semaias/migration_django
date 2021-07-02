@@ -3,4 +3,4 @@ from .models import companiesKFS
 # Create your views here.
     
 def someview ():
-  cKFS = companiesKFS.objects.all()
+  obj = companiesKFS.objects.get(id>1)
