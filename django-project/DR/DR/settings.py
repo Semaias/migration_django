@@ -77,21 +77,25 @@ WSGI_APPLICATION = 'DR.wsgi.application'
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
 DATABASES = {
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.sqlite3',
+    #     'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    # },
+
+
+    # cópia 'm3'
+    # 'm3': {
+    #     'ENGINE': 'django.db.backends.mysql',
+    #     'NAME': 'sys_whatsfacil',
+    #     'USER': 'root',
+    #     'PASSWORD': 'Y6JR5^m3&DQGQfRY',
+    #     'HOST': '52.67.86.19',
+    #     'PORT': '3306',
+    # },
+
+
+    # a ser copiado 'kfs'
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    },
-
-    'm3': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'sys_whatsfacil',
-        'USER': 'root',
-        'PASSWORD': 'Y6JR5^m3&DQGQfRY',
-        'HOST': '52.67.86.19',
-        'PORT': '3306',
-    },
-
-    'kfs': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'sys_whatsfacil',
         'USER': 'root',
